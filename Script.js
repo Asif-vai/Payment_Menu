@@ -12,37 +12,54 @@ console.log("* 4 - Transfer \t\t |")
 console.log("* 5 - Exit \t\t |")
 console.log("*******************************")
 
-let option = prompt("Choose an option : ");
+let pin = prompt("Enter your PIN to continue: ");
 
-if (option === "1") {
-    function checkBalance(balance) {
-        console.log("Your Balance is ",balance)
+if (pin === "BoomBoom") {
+    let option = prompt("Choose an option : ");
 
-    }
-    checkBalance("1000Tk")
-}else if (option === "2") {
-    function deposit() {
-        let depositMoney = prompt("How Much Do You Deposit? :")
-        console.log(depositMoney,"Deposit Money Successfull");
-    }
-    deposit();
-}else if (option === "3") {
-    function withdraw() {
-        let withdrawAmount = prompt("How Much Do You Withdraw? :")
-        console.log(withdrawAmount,"Withdraw Money Successfull");
-    }
-    withdraw();
-}else if (option === "4") {
-    function Transfer (){
-        let transferNumber = prompt("Write Number There you want to send or transfer : ");
-        let transferAmount = prompt("Amount : ")
-        console.log("Transfer Money To",transferNumber)
-        console.log("Totall Amount :",transferAmount)
-        let sureTransferAmount = prompt("Are You sure(y/n):");
-
-        if(sureTransferAmount === "y") {
-            console.log(`Money Transfer Successfully on ${transferNumber} Tranfer Money is ${sureTransferAmount} TrxId :XXXXXEJEI234`);
+    if (option === "1") {
+        function checkBalance(balance) {
+            console.log("Your Balance is", balance)
         }
+        checkBalance("1000Tk")
+
+    } else if (option === "2") {
+        function deposit() {
+            let depositMoney = prompt("How Much Do You Deposit? : ");
+            console.log(depositMoney, "Deposit Money Successful");
+        }
+        deposit();
+
+    } else if (option === "3") {
+        function withdraw() {
+            let withdrawAmount = prompt("How Much Do You Withdraw? : ");
+            console.log(withdrawAmount, "Withdraw Money Successful");
+        }
+        withdraw();
+
+    } else if (option === "4") {
+        function transfer() {
+            let transferNumber = prompt("Write number where you want to send or transfer: ");
+            let transferAmount = prompt("Amount: ");
+            console.log("Transfer Money To", transferNumber);
+            console.log("Total Amount:", transferAmount);
+            let sureTransferAmount = prompt("Are you sure (y/n): ");
+
+            if (sureTransferAmount.toLowerCase() === "y") {
+                console.log(`Money Transfer Successfully on ${transferNumber}. Transfer Money is ${transferAmount}. TrxId: XXXXXEJEI234`);
+            } else {
+                console.log("Transfer canceled.");
+            }
+        }
+        transfer();
+
+    } else if (option === "5") {
+        console.log("Thank you for using the ATM. Goodbye!");
+
+    } else {
+        console.log("Invalid option. Please try again.");
     }
-    Transfer()
+
+} else {
+    console.log("Invalid PIN. Access Denied.");
 }
