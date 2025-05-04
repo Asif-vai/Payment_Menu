@@ -1,7 +1,5 @@
 # Simple Payment Menu 
-<br>
-Pin : BoomBoom
-<br>
+
 ```bash
 git clone https://github.com/Asif-vai/Payment_Menu.git
 cd Payment_Menu
