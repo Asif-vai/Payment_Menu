@@ -8,4 +8,4 @@ cd Payment_Menu
 npm install prompt-sync
 node ./Script.js
 ```
-[Watch Video Demo](https://www.youtube.com/watch?v=abc123xyz)
+![ছবির বিবরণ](i/home/empire/Documents/Payment_Menu/sports-car-mountains-retrowave-synthwave-4k-wallpaper-uhdpaper.com-233@0@k.jpg)
