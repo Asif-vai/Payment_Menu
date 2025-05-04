@@ -8,6 +8,3 @@ cd Payment_Menu
 npm install prompt-sync
 node ./Script.js
 ```
-![image](car.jpg)
-
-![🎥 Watch Demo Video](jde.mp4)
